@@ -8,13 +8,15 @@ import { TeamStatsComponent } from './team-stats/team-stats.component';
 import {FormsModule} from '@angular/forms';
 import { GameResultsComponent } from './game-results/game-results.component';
 import { GameStatsComponent } from './game-stats/game-stats.component';
+import { SelectTeamComponent } from './select-team/select-team.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TeamStatsComponent,
     GameResultsComponent,
-    GameStatsComponent
+    GameStatsComponent,
+    SelectTeamComponent
   ],
   imports: [
     BrowserModule,

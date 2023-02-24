@@ -1,0 +1,257 @@
+import {Meta, Story} from '@storybook/angular/types-6-0';
+import {SelectTeamComponent} from "./select-team.component";
+
+export default {
+  component: SelectTeamComponent
+} as Meta;
+
+const Template: Story<SelectTeamComponent<string>> = (args: SelectTeamComponent<string>) => ({
+  props: args,
+});
+
+export const Primary = Template.bind({});
+Primary.args = {
+  options:  [
+    {
+      "labels": {
+        "conference": "East",
+        "division": "Southeast",
+        "team": "Atlanta Hawks"
+      },
+      "value": "0123"
+    },
+    {
+      "labels": {
+        "conference": "East",
+        "division": "Atlantic",
+        "team": "Boston Celtics"
+      },
+      "value":  "1"
+    },
+    {
+      "labels": {
+        "conference": "East",
+        "division": "Atlantic",
+        "team": "Brooklyn Nets"
+      },
+      "value":  "2"
+    },
+    {
+      "labels": {
+        "conference": "East",
+        "division": "Southeast",
+        "team": "Charlotte Hornets"
+      },
+      "value":  "3"
+    },
+    {
+      "labels": {
+        "conference": "East",
+        "division": "Central",
+        "team": "Chicago Bulls"
+      },
+      "value":  "4"
+    },
+    {
+      "labels": {
+        "conference": "East",
+        "division": "Central",
+        "team": "Cleveland Cavaliers"
+      },
+      "value":  "5"
+    },
+    {
+      "labels": {
+        "conference": "West",
+        "division": "Southwest",
+        "team": "Dallas Mavericks"
+      },
+      "value":  "6"
+    },
+    {
+      "labels": {
+        "conference": "West",
+        "division": "Northwest",
+        "team": "Denver Nuggets"
+      },
+      "value":  "7"
+    },
+    {
+      "labels": {
+        "conference": "East",
+        "division": "Central",
+        "team": "Detroit Pistons"
+      },
+      "value":  "8"
+    },
+    {
+      "labels": {
+        "conference": "West",
+        "division": "Pacific",
+        "team": "Golden State Warriors"
+      },
+      "value":  "9"
+    },
+    {
+      "labels": {
+        "conference": "West",
+        "division": "Southwest",
+        "team": "Houston Rockets"
+      },
+      "value":  "10"
+    },
+    {
+      "labels": {
+        "conference": "East",
+        "division": "Central",
+        "team": "Indiana Pacers"
+      },
+      "value":  "11"
+    },
+    {
+      "labels": {
+        "conference": "West",
+        "division": "Pacific",
+        "team": "LA Clippers"
+      },
+      "value":  "12"
+    },
+    {
+      "labels": {
+        "conference": "West",
+        "division": "Pacific",
+        "team": "Los Angeles Lakers"
+      },
+      "value":  "13"
+    },
+    {
+      "labels": {
+        "conference": "West",
+        "division": "Southwest",
+        "team": "Memphis Grizzlies"
+      },
+      "value":  "14"
+    },
+    {
+      "labels": {
+        "conference": "East",
+        "division": "Southeast",
+        "team": "Miami Heat"
+      },
+      "value":  "15"
+    },
+    {
+      "labels": {
+        "conference": "East",
+        "division": "Central",
+        "team": "Milwaukee Bucks"
+      },
+      "value":  "16"
+    },
+    {
+      "labels": {
+        "conference": "West",
+        "division": "Northwest",
+        "team": "Minnesota Timberwolves"
+      },
+      "value":  "17"
+    },
+    {
+      "labels": {
+        "conference": "West",
+        "division": "Southwest",
+        "team": "New Orleans Pelicans"
+      },
+      "value":  "18"
+    },
+    {
+      "labels": {
+        "conference": "East",
+        "division": "Atlantic",
+        "team": "New York Knicks"
+      },
+      "value":  "19"
+    },
+    {
+      "labels": {
+        "conference": "West",
+        "division": "Northwest",
+        "team": "Oklahoma City Thunder"
+      },
+      "value":  "20"
+    },
+    {
+      "labels": {
+        "conference": "East",
+        "division": "Southeast",
+        "team": "Orlando Magic"
+      },
+      "value":  "21"
+    },
+    {
+      "labels": {
+        "conference": "East",
+        "division": "Atlantic",
+        "team": "Philadelphia 76ers"
+      },
+      "value":  "22"
+    },
+    {
+      "labels": {
+        "conference": "West",
+        "division": "Pacific",
+        "team": "Phoenix Suns"
+      },
+      "value":  "23"
+    },
+    {
+      "labels": {
+        "conference": "West",
+        "division": "Northwest",
+        "team": "Portland Trail Blazers"
+      },
+      "value":  "24"
+    },
+    {
+      "labels": {
+        "conference": "West",
+        "division": "Pacific",
+        "team": "Sacramento Kings"
+      },
+      "value":  "25"
+    },
+    {
+      "labels": {
+        "conference": "West",
+        "division": "Southwest",
+        "team": "San Antonio Spurs"
+      },
+      "value":  "26"
+    },
+    {
+      "labels": {
+        "conference": "East",
+        "division": "Atlantic",
+        "team": "Toronto Raptors"
+      },
+      "value":  "27"
+    },
+    {
+      "labels": {
+        "conference": "West",
+        "division": "Northwest",
+        "team": "Utah Jazz"
+      },
+      "value":  "28"
+    },
+    {
+      "labels": {
+        "conference": "East",
+        "division": "Southeast",
+        "team": "Washington Wizards"
+      },
+      "value":  "29"
+    }
+  ]
+};
+
