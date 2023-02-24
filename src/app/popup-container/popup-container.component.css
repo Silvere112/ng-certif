@@ -1,0 +1,28 @@
+.popup-bg{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: gray;
+  opacity: 0.5;
+}
+
+.popup-container{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-component-wrapper {
+  background-color: white;
+  border-radius: 3px;
+  padding: 20px;
+}

@@ -9,6 +9,9 @@ import {FormsModule} from '@angular/forms';
 import { GameResultsComponent } from './game-results/game-results.component';
 import { GameStatsComponent } from './game-stats/game-stats.component';
 import { SelectTeamComponent } from './select-team/select-team.component';
+import { DeleteConfirmationComponent } from './delete-confirmation/delete-confirmation.component';
+import {PopupRoutingModule} from "./popup-routing.module";
+import { PopupContainerComponent } from './popup-container/popup-container.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +19,14 @@ import { SelectTeamComponent } from './select-team/select-team.component';
     TeamStatsComponent,
     GameResultsComponent,
     GameStatsComponent,
-    SelectTeamComponent
+    SelectTeamComponent,
+    DeleteConfirmationComponent,
+    PopupContainerComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    PopupRoutingModule,
     HttpClientModule,
     FormsModule
   ],

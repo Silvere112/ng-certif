@@ -22,8 +22,8 @@ export class NbaService {
     this.trackedTeams.push(team);
   }
 
-  removeTrackedTeam(team: Team): void {
-    let index = this.trackedTeams.findIndex(t => t.id == team.id);
+  removeTrackedTeam(id: string): void {
+    let index = this.trackedTeams.findIndex(t => t.id.toString() == id);
     this.trackedTeams.splice(index, 1);
   }
 

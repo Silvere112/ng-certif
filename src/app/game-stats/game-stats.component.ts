@@ -36,7 +36,6 @@ export class GameStatsComponent {
   }
 
   trackTeam(teamId: string | number): void {
-    console.log(teamId)
     let team = this.allTeams.find(team => team.id == Number(teamId));
     if (team)
       this.nbaService.addTrackedTeam(team);

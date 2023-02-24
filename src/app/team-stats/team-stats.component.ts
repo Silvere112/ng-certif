@@ -2,6 +2,7 @@ import {Component, Input, OnInit} from '@angular/core';
 import {Observable, tap} from 'rxjs';
 import {NbaService} from '../nba.service';
 import {Game, Stats, Team} from '../data.models';
+import {ActivatedRoute, ActivationEnd, Router} from "@angular/router";
 
 @Component({
   selector: 'app-team-stats',
@@ -15,7 +16,7 @@ export class TeamStatsComponent implements OnInit {
 
   games$!: Observable<Game[]>;
   stats!: Stats;
-  constructor(protected nbaService: NbaService) { }
+  constructor(private nbaService: NbaService, private router: Router) { }
 
   ngOnInit(): void {
     this.games$ = this.nbaService.getLastResults(this.team, 12).pipe(
@@ -23,4 +24,7 @@ export class TeamStatsComponent implements OnInit {
     )
   }
 
+  deleteClicked() {
+    this.router.navigate([{ outlets: { popup: ['delete', this.team.id] } }])
+  }
 }
