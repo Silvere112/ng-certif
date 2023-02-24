@@ -5,7 +5,7 @@ import {GameStatsComponent} from './game-stats/game-stats.component';
 
 const routes: Routes = [
   {
-    path: "results/:teamAbbr", component: GameResultsComponent
+    path: "results/:teamAbbr/:nbDays", component: GameResultsComponent
   },
   {
     path: "", component: GameStatsComponent
